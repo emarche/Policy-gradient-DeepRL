@@ -1,0 +1,36 @@
+setup:
+  seed: 1
+  use_gpu: False
+
+train:
+  name: 'LunarLander-v2'
+  n_episodes: 1001
+  verbose: 50
+
+agent:
+  update_freq: 5
+  n_epochs: 10
+  
+  eps_clip: 0.2
+  gamma: 0.99 # Gives the best performance in CartPole-v1/LunarLander-v2
+
+  std: 1
+  std_scale: True
+  std_decay: 0.99
+  std_min: 0.01
+
+  buffer:
+    batch: 128
+
+  actor:
+    h_layers: 2
+    h_size: 64
+    print_model: False
+
+  critic:
+    h_layers: 2
+    h_size: 64
+    print_model: False
+
+      
+

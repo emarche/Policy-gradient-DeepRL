@@ -1,0 +1,38 @@
+setup:
+  seed: 3
+  use_gpu: False
+
+train:
+  name: 'LunarLanderContinuous-v2'
+  n_episodes: 1001
+  verbose: 50
+
+agent:
+  gamma: 0.99
+  tau: 0.005
+
+  std_scale: True
+  std_decay: 0.99
+  std_min: 0.01
+  std: 1
+  
+  buffer:
+    size: 10000 
+    batch: 128
+
+  actor:
+    h_layers: 2
+    h_size: 64
+    print_model: False
+
+  critic:
+    h_state_layers: 0
+    h_state_size: 32
+    h_action_layers: 0
+    h_action_size: 32
+    h_layers: 2
+    h_size: 64
+    print_model: False
+  
+      
+

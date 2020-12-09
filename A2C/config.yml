@@ -1,0 +1,22 @@
+setup:
+  seed: 3
+  use_gpu: False
+
+train:
+  name: 'LunarLander-v2'  
+  n_episodes: 1001
+  verbose: 50
+
+agent:
+  buffer: 10000
+  batch_size: 128
+
+  gamma: 0.99
+  
+  off_policy: False
+
+  dnn:
+    h_layers: 2
+    h_size: 64
+    lr: 1e-4
+    print_model: False
