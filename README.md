@@ -23,7 +23,7 @@ It contains implementation of the following policy-gradient algorithms for discr
 ### Results
 
 The proposed approaches are evaluated over different seeds in the LunarLander discrete and continuous environment. 
-Follows our results of the performance (i.e., mean reward over 100 epochs) of the algorithms. Notice that we considered "common" hyperparameters for our evaluation, without any fine tuning (SAC poor performance are due tothe lack of specific tuning).
+Follows our results of the performance (i.e., mean reward over 100 epochs) of the algorithms. Notice that we considered "common" hyperparameters for our evaluation, without any fine tuning (SAC poor performance are due to the lack of specific tuning).
 
 <p align="center">
   <img width="460" height="325" src="results/policygradient_discrete.png">
